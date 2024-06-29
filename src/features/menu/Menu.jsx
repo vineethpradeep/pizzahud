@@ -4,9 +4,7 @@ import Skeleton from "../../ui/Skeleton";
 import { getMenu } from "../../services/apiRestaurant";
 
 function Menu() {
-  // response from the loader like useState
   const menu = useLoaderData();
-  // console.log(menu);
   const navigation = useNavigation();
   const loading = navigation.state === "loading";
 
@@ -30,7 +28,6 @@ function Menu() {
     </section>
   );
 }
-// assing the api call in the react router loader
 export async function loader() {
   const menu = await getMenu();
   console.log(menu);

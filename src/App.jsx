@@ -12,7 +12,6 @@ import AppLayout from "./ui/AppLayout";
 import Error from "./ui/Error";
 import "./index.css";
 
-// imparative way
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
@@ -25,8 +24,6 @@ const router = createBrowserRouter([
       {
         path: "/menu",
         element: <Menu />,
-        // like useEfect api call from the mount
-        // loader when its the route the page api call happend when component mounts
         loader: menuLoader,
         errorElement: <Error />,
       },
@@ -34,7 +31,6 @@ const router = createBrowserRouter([
       {
         path: "/order/new",
         element: <CreateOrder />,
-        // sction/event handler
         action: createOrderAction,
       },
       {

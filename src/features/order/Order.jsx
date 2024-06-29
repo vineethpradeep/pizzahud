@@ -1,6 +1,4 @@
-// Test ID: IIDSAT
 import { useFetcher, useLoaderData } from "react-router-dom";
-// import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import UpdateOrder from "./UpdateOrder";
 
 import {
@@ -13,9 +11,6 @@ import OrderItem from "./OrderItem";
 import { useEffect } from "react";
 
 function Order() {
-  // Everyone can search for all orders, so for privacy reasons we're gonna gonna exclude names or address, these are only for the restaurant staff
-  // Instead of calling the API in this component, we use the router loader. You can use the fetcher to call the loader function from another component.
-  // useFetcher same as useLoaderData
   const fetcher = useFetcher();
   const order = useLoaderData();
   const {
@@ -29,12 +24,9 @@ function Order() {
   } = order;
   const deliveryIn = calcMinutesLeft(estimatedDelivery);
 
-  // The component will call the getmenu loader API before create order components.
   useEffect(
     function () {
-      if (!fetcher.data && fetcher.state === "idle")
-        // fetch the api from the menu loads getMenu api
-        fetcher.load("/menu");
+      if (!fetcher.data && fetcher.state === "idle") fetcher.load("/menu");
     },
     [fetcher],
   );
@@ -89,10 +81,7 @@ function Order() {
             </p>
             <p className="font-bold">{formatCurrency(orderPrice)}</p>
           </div>
-          {/* <div className="flex items-center justify-between gap-4 text-sm">
-            <p className="text-sm font-medium text-stone-600">Price pizza:</p>
-            <p>{formatCurrency(orderPrice)}</p>
-          </div> */}
+
           {priority && (
             <div className="flex items-center justify-between gap-2 text-sm">
               <p>

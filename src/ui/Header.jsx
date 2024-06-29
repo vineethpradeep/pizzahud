@@ -14,7 +14,6 @@ function Header() {
   const dispatch = useDispatch();
   const [changeHeader, setChangeHeader] = useState(false);
   const totalQuantity = useSelector(getTotalCartQuantity);
-  //header change function
   const onChangeHeader = () => {
     if (window.scrollY >= 50) {
       setChangeHeader(true);
@@ -23,7 +22,6 @@ function Header() {
     }
   };
 
-  //change header by scrolling
   window.addEventListener("scroll", onChangeHeader);
   return (
     <header
@@ -34,7 +32,6 @@ function Header() {
       }
     >
       <nav className="mx-auto flex w-full max-w-screen-xl items-center gap-x-2 px-6 py-3">
-        {/* left  */}
         <div className="flex flex-grow">
           <Link to="/">
             <img className="w-44 cursor-pointer" src={logo} alt="logo" />

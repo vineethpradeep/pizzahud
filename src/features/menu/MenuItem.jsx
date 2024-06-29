@@ -23,9 +23,6 @@ function MenuItem({ pizza }) {
 
   return (
     <div className="relative transform rounded-lg border border-gray-100 bg-white p-4 transition duration-700 hover:scale-105 hover:shadow-xl">
-      {/* <span className="poppins mb-4 inline-block rounded-full border border-green-100 bg-green-100 px-4 py-1 text-sm text-red-800">
-        <p>Priority</p>
-      </span> */}
       <img
         className={`mx-auto w-64 transform transition duration-300 hover:scale-105 ${soldOut ? "opacity-70 grayscale" : ""}`}
         src={imageUrl}

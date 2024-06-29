@@ -1,7 +1,6 @@
 import FooterInfo from "./FooterInfo";
 
 const MainFooter = () => {
-  // footer links
   const FooterLinks = [
     { id: 1, text: "About Project Details" },
     { id: 2, text: "Get Help" },
@@ -16,7 +15,6 @@ const MainFooter = () => {
   return (
     <div className="flex pb-8">
       <FooterInfo />
-      {/* footer links  */}
       <div className="flex space-x-12">
         <div className="flex flex-col space-y-2">
           {FooterLinks.slice(0, 3).map((item) => (

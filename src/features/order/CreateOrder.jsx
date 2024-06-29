@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import { Form, redirect, useActionData, useNavigation } from "react-router-dom";
 import { createOrder } from "../../services/apiRestaurant";
 import Button from "../../ui/Button";
@@ -40,7 +39,6 @@ function CreateOrder() {
       ) : (
         <>
           <h2 className="poppins pb-4 text-4xl">Ready to order? Let's go!</h2>
-          {/* <Form method="POST" action="/order/newOrder"> */}
           <Form method="POST">
             <div className="py-4">
               <label className="mb-3 block text-black">First Name</label>
@@ -139,28 +137,15 @@ function CreateOrder() {
   );
 }
 
-// form action return as promise
 export async function action({ request }) {
-  // get input value from the form while submit
-  // formData web api format to call the form value
   const formData = await request.formData();
-  // formData convert to Object
   const data = Object.fromEntries(formData);
-
-  // To get the cart data => fakeCart
-  // while submit the form
-  // create hidden input element
-  // <input type="hidden" name="cart" value={JSON.stringify(cart)} />
-  // by submitting the form get the cart value too
-
-  // cart value to object and priority to set as true false checkbox value in the  object
   const order = {
     ...data,
     cart: JSON.parse(data.cart),
     priority: data.priority === "true",
   };
 
-  // handling error
   const errors = {};
   if (!isValidPhone(order.phone)) {
     errors.phone = "Please provide the correct phone number";
@@ -168,17 +153,11 @@ export async function action({ request }) {
 
   if (Object.keys(errors).length > 0) return errors;
 
-  // api request
   const newOrder = await createOrder(order);
-  // from the response need to redirect the url
-  // navigate hook cont able to use in function it will work on components
-  // there is another way to redirect function that react router provide
+
   console.log(newOrder);
-  // To remove the cart from the footer => do not use redux will get rid off
-  // function wise removing the cart
   store.dispatch(clearCart());
   return redirect(`/order/${newOrder.id}`);
-  // return null;
 }
 
 export default CreateOrder;

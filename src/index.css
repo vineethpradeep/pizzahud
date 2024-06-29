@@ -30,7 +30,6 @@ body::-webkit-scrollbar {
   height: 100dvh;
 }
 
-/* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
 .loader {
   width: 45px;
   aspect-ratio: 0.75;
@@ -77,12 +76,6 @@ body::-webkit-scrollbar {
   background-position: center;
   background-size: cover;
 }
-/* .banner {
-  background-image: url("../assets/bannerbackground.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-} */
 .poppins {
   font-family: "Poppins", sans-serif;
 }
@@ -99,7 +92,6 @@ body::-webkit-scrollbar {
   border: 1px solid #f91944;
 }
 
-/* Glassmorphism card effect */
 .glass {
   backdrop-filter: blur(14px) saturate(180%);
   -webkit-backdrop-filter: blur(14px) saturate(180%);

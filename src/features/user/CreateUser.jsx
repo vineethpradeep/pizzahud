@@ -39,7 +39,6 @@ function CreateUser({ logInUser }) {
               : `${getGreetingBasedOnTime()}, ${logInUser}! Proceed with the order.`}
           </p>
 
-          {/* <p>{getGreetingBasedOnTime()}</p> */}
           {!logInUser && (
             <input
               className="input w-[30%]"

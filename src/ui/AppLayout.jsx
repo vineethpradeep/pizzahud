@@ -6,8 +6,6 @@ import BottomFooter from "./BottomFooter";
 import MainFooter from "./MainFooter";
 
 function AppLayout() {
-  // useNavigation tells the status of the page navigation components
-  //   react router provide the navigation state of idle/loading/error (satus of req and res data while, react router handle by loader and action )
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
   return (
