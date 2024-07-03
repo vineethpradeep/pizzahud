@@ -34,13 +34,17 @@ function Header() {
       <nav className="mx-auto flex w-full max-w-screen-xl items-center gap-x-2 px-6 py-3">
         <div className="flex flex-grow">
           <Link to="/">
-            <img className="w-44 cursor-pointer" src={logo} alt="logo" />
+            <img
+              className="w-32 cursor-pointer sm:w-44"
+              src={logo}
+              alt="logo"
+            />
           </Link>
         </div>
-        <div className="box-border flex items-center overflow-hidden rounded-full bg-amber-100 p-1 ring-red-300 focus:ring-4">
+        <div className="hidden items-center overflow-hidden rounded-full bg-amber-100 p-1 ring-red-300 focus:ring-4 sm:flex">
           <SearchOrder />
         </div>
-        <div className="flex items-center justify-end space-x-4">
+        <div className="flex items-center justify-end space-x-2 sm:space-x-4">
           <Link to="/cart">
             <div className="relative flex cursor-pointer">
               <span className="bg-primary poppins absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full text-white">
@@ -54,9 +58,9 @@ function Header() {
               <img
                 src={userIcon}
                 alt="user_icon"
-                className="h-10 w-10 rounded-full"
+                className="h-8 w-8 rounded-full sm:h-10 sm:w-10"
               />
-              <p className="poppins hidden text-gray-700 md:block lg:block">
+              <p className="poppins hidden text-gray-700 sm:block">
                 {username}
               </p>
               <FiLogOut

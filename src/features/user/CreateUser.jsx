@@ -33,7 +33,7 @@ function CreateUser({ logInUser }) {
     <div className="flex bg-amber-300 py-12 text-center">
       <div className="mx-auto max-w-screen-xl from-inherit px-6">
         <form onSubmit={handleSubmit}>
-          <p className="poppins pb-4 text-center text-4xl">
+          <p className="poppins pb-4 text-center text-2xl sm:text-4xl">
             {!logInUser
               ? "Step right up to Pizza Hud! Order the pizza with your name"
               : `${getGreetingBasedOnTime()}, ${logInUser}! Proceed with the order.`}
@@ -41,7 +41,7 @@ function CreateUser({ logInUser }) {
 
           {!logInUser && (
             <input
-              className="input w-[30%]"
+              className="input w-[50%] sm:w-[30%]"
               type="text"
               placeholder="Your full name"
               value={username}

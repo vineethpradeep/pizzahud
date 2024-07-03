@@ -71,11 +71,31 @@ body::-webkit-scrollbar {
 
 .header-banner {
   background-image: url("./assets/bannerbackground.png");
-  height: 600px !important;
+  height: 600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
+@media (max-width: 640px) {
+  .header-banner {
+    background-image: url("./assets/bannerbackground-mobile.png");
+    height: 300px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .header-banner {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-banner {
+    height: 600px !important;
+  }
+}
+
 .poppins {
   font-family: "Poppins", sans-serif;
 }

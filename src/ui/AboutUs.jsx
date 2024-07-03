@@ -38,7 +38,7 @@ function AboutUs() {
     <section className="mx-auto my-12 max-w-screen-xl px-6">
       <div className="mx-auto my-12 max-w-screen-xl px-6">
         <h1 className="poppins pb-4 text-4xl">Why you choose us</h1>
-        <p className="poppins w-2/4 text-sm text-gray-500">
+        <p className="poppins w-full text-sm text-gray-500 sm:w-2/4">
           Barton waited twenty always repair in within we do. AN delighted
           offending curiosity my is dashwoods at. Boy prosperous increasing
           surrounded.
