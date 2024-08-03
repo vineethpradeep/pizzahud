@@ -10,11 +10,14 @@ function Menu() {
 
   return (
     <section className="mx-auto my-24 max-w-screen-xl px-6">
-      <h1 className="poppins pb-4 text-4xl">Select your tasty menu.</h1>
+      <h1 className="poppins pb-4 text-4xl">
+        Select your Pizza hud tasty menu.
+      </h1>
       <p className="poppins w-full text-sm text-gray-500 sm:w-2/4">
-        Barton waited twenty always repair in within we do. AN delighted
-        offending curiosity my is dashwoods at. Boy prosperous increasing
-        surrounded.
+        Pizza Hud, tasty meanu hand-tossed dough to premium cheeses and vibrant
+        vegetables, ensuring each bite bursts with flavor. Savor the perfect
+        harmony of tangy tomato sauce, savory meats, and aromatic herbs in every
+        delicious slice.
       </p>
       <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
         {menu.map((pizza) =>
