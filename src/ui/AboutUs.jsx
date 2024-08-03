@@ -21,7 +21,8 @@ const aboutFakeContent = [
     icon: `${icon_2}`,
     title: "A Good Auto Responder",
     description:
-      "At Pizza Hud, customer satisfaction is our top priority. Our friendly team is ready to ensure a delightful dining experience!"
+      "At Pizza Hud, customer satisfaction is our top priority. Our friendly team is ready to ensure a delightful dining experience!",
+  },
   {
     id: 3,
     image: `${img_3}`,
