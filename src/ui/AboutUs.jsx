@@ -13,7 +13,7 @@ const aboutFakeContent = [
     icon: `${icon_1}`,
     title: "Fast Delivery",
     description:
-      "Our efficient delivery team, you can enjoy our delicious creations in the comfort of your home in no time. Whether it's a busy weeknight or a weekend treat, count on Pizza Hud for speedy service without compromising on quality. Your cravings are just a call away!",
+      "Enjoy Pizza Hud's home delivery, bringing your favorite pizzas hot and fresh to your doorstep, fast and reliable!",
   },
   {
     id: 2,
@@ -21,15 +21,14 @@ const aboutFakeContent = [
     icon: `${icon_2}`,
     title: "A Good Auto Responder",
     description:
-      "At Pizza Hud, customer satisfaction is our top priority. Our friendly and dedicated customer care team is always ready to assist you with any questions or concerns. We're here to ensure you have a delightful dining experience every time.",
-  },
+      "At Pizza Hud, customer satisfaction is our top priority. Our friendly team is ready to ensure a delightful dining experience!"
   {
     id: 3,
     image: `${img_3}`,
     icon: `${icon_3}`,
     title: "Home Delivery",
     description:
-      "Enjoy the convenience of Pizza Hud's home delivery service, bringing your favorite pizzas straight to your doorstep. Whether you're hosting a party or simply craving a night in, our prompt and reliable delivery ensures your meal arrives hot and fresh. Sit back, relax, and let us take care of your pizza needs!",
+      "Enjoy Pizza Hud's home delivery, bringing hot, fresh pizzas to your door. Perfect for parties or a cozy night in!",
   },
 ];
 
